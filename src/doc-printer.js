@@ -32,7 +32,7 @@ function makeAlign(ind, n, options) {
           value: ind.value + n
         }
       : options.useTabs && n > 0
-        ? makeAlign(ind, options)
+        ? makeAlign(ind, n, options)
         : {
             length: ind.length + n,
             value: ind.value + " ".repeat(n)
